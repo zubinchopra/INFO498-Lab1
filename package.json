@@ -1,0 +1,22 @@
+{
+  "name": "info498-lab1",
+  "version": "1.0.0",
+  "description": "This is lab for INFO498",
+  "main": "index.spec.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaze-st/INFO498-Lab1.git"
+  },
+  "author": "Hao Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaze-st/INFO498-Lab1/issues"
+  },
+  "homepage": "https://github.com/kaze-st/INFO498-Lab1#readme",
+  "dependencies": {
+    "jest": "^24.7.0"
+  }
+}
