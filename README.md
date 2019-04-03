@@ -9,4 +9,4 @@
 6. Run the script via `node ./exercise/problem-a.ts` and check if your code passes the given tests
 7. If your code passes the tests, `add`, `commit`, and `push` your code to `dev`.
 8. Create a pull request to merge your commits from `dev` into `master` (no need to complete the merge yourself)
-
+9. Submit the link to your pull request on Canvas under Lab 1 Exercise
