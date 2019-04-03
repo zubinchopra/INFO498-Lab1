@@ -1,6 +1,6 @@
 // Given an array of ints a and an int k, return if there exists a pair (x, y) in a such that x + y = k.
-function hasPairSumToK(a: number[], k:number): boolean {
-
+function hasPairSumToK(a: number[], k: number): boolean {
+    return true
 }
 
 
@@ -8,14 +8,19 @@ function hasPairSumToK(a: number[], k:number): boolean {
 
 
 // TESTS don't touch them
+function test(actual: [number[],number], expected:boolean){
+    if (hasPairSumToK(actual[0], actual[1]) != expected){
+        console.log('ERROR: hasPairSumToK(',actual[0] ,',', actual[1],') should be', expected)
+    }
+}
+test([[], 2], false)
 
-console.log(hasPairSumToK([], 2), "should return false")
+test([[-1, -2, -3], -5],true);
+test([[1, 2, 3, 4, 5, 7], 8], true);
+test([[1, 2, 3, 4, 96, -5], -4], true);
 
-console.log(hasPairSumToK([-1, -2, -3], -5), "should return true");
-console.log(hasPairSumToK([1, 2, 3, 4 , 5 , 7 ], 8), "should return true");
-console.log(hasPairSumToK([1, 2, 3, 4 , 96, -5], -4), "should return true");
- 
 
-console.log(hasPairSumToK([-1, -2, -3], 2), "should return false");
-console.log(hasPairSumToK([1, 2, 3], 9), "should return false");
-console.log(hasPairSumToK([7, 8, 9], 69), "should return false");
+test([[-1, -2, -3], 2], false);
+test([[1, 2, 3], 9], false);
+test([[7, 8, 9], 6],  false);
+
